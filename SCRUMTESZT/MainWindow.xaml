@@ -1,0 +1,38 @@
+﻿<Window x:Class="SCRUMTESZT.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SCRUMTESZT"
+        mc:Ignorable="d"
+        Title="SCRUMTESZT" Height="550" Width="1100">
+    <Grid>
+        <Label Content="SCRUM TESZT" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="18" Margin="0,10,0,0"/>
+        <Label Content="Neved:" HorizontalAlignment="Left" Height="29" Margin="23,70,0,0" VerticalAlignment="Top" Width="50"/>
+        <TextBox x:Name="txbNev" HorizontalAlignment="Left" Margin="124,76,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="148" Background="#FFDEDEDE"/>
+        <Label Content="E-mail címed" HorizontalAlignment="Left" Height="29" Margin="23,100,0,0" VerticalAlignment="Top" Width="78"/>
+        <TextBox x:Name="txbMail" HorizontalAlignment="Left" Margin="124,106,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="148" Background="#FFDEDEDE"/>
+        <Label Content="1. Ki a Scrum csapat vezetője?" HorizontalAlignment="Left" Margin="23,140,0,0" VerticalAlignment="Top"/>
+        <ListBox HorizontalAlignment="Left" Height="86" Margin="35,171,0,0" VerticalAlignment="Top" Width="163">
+            <ListBoxItem>Product owner</ListBoxItem>
+            <ListBoxItem>Scrum master</ListBoxItem>
+            <ListBoxItem>Developer</ListBoxItem>
+            <ListBoxItem>Mekk mester</ListBoxItem>
+        </ListBox>
+        <Label Content="2. Milyen módszertan a Scrum módszertan?" HorizontalAlignment="Left" Margin="23,271,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cnb2f" HorizontalAlignment="Left" Margin="35,302,0,0" VerticalAlignment="Top" Width="177">
+            <ComboBoxItem>Agilis</ComboBoxItem>
+            <ComboBoxItem>Hagyományos</ComboBoxItem>
+            <ComboBoxItem>Rossz</ComboBoxItem>
+        </ComboBox>
+        <Label Content="3. Milyen eseményeket ismersz a Scrum-ban?" HorizontalAlignment="Left" Margin="23,340,0,0" VerticalAlignment="Top"/>
+        <StackPanel HorizontalAlignment="Left" Height="63" Margin="62,381,0,0" VerticalAlignment="Top" Width="177">
+            <CheckBox Content="Sprint Planning Meeting"/>
+            <CheckBox Content="Daily Conversion"/>
+            <CheckBox Content="Sprint Retrospective"/>
+            <CheckBox Content="Backlog Grooming"/>
+        </StackPanel>
+
+
+    </Grid>
+</Window>
